@@ -24,4 +24,15 @@ Installation on Host of Murali
 ============================
  sudo ln -s /home/fractals/tomcat/BatchAdmin/spring-batch-admin-spring-boot-1.0.0-RELEASE.jar /etc/init.d/batch-admin
  Login as normal:
-sudo service batch-admin
+sudo service batch-admin (Will Start jar file as service)
+
+Or Java -jae <jar created>
+
+Converting to Jar
+---------------
+Use pom.xml.bacupjar and build
+
+Deploy War
+=======
+Do mvn clean install and rename war file to batch-admin.war 
+http://192.168.56.102:8080/batch-admin will take you to batch console
